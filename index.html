@@ -3,76 +3,106 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Game Landing Page</title>
-    <link rel="stylesheet" href="vis.css" />
+    <title>Ultimate Card Game</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="vis.css" />
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- NAV -->
     <nav class="navbar">
+        <a href="#hero">Home</a>
         <a href="#gallery">Gallery</a>
         <a href="#features">Features</a>
-        <a href="#animations">Animations</a>
         <a href="#order">Order</a>
     </nav>
 
     <!-- HERO -->
-    <section class="hero">
-        <div class="hero-inner">
-            <h1>The Ultimate Card Game Experience</h1>
-            <p>Beautiful design. Smooth animations. Crafted for players who want the best.</p>
-            <a class="cta-btn" href="#order">Get Notified</a>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Experience the Future of Card Games</h1>
+            <p>Stylish. Animated. Premium. Designed to feel alive.</p>
+            <a href="#order" class="cta-btn">Get Notified</a>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="hero-cards">
+            <img src="https://picsum.photos/270/380?random=1" class="hero-card card1" alt="">
+            <img src="https://picsum.photos/270/380?random=2" class="hero-card card2" alt="">
+            <img src="https://picsum.photos/270/380?random=3" class="hero-card card3" alt="">
         </div>
     </section>
 
     <!-- GALLERY -->
     <section class="gallery" id="gallery">
         <h2>Game Gallery</h2>
+        <p>High-quality visual previews of the world you're about to enter.</p>
+
         <div class="img-grid">
-            <div class="img-placeholder big">Image 1</div>
-            <div class="img-placeholder big">Image 2</div>
-            <div class="img-placeholder big">Image 3</div>
-            <div class="img-placeholder big">Image 4</div>
+            <img src="https://picsum.photos/500/350?random=4" class="img-item">
+            <img src="https://picsum.photos/500/350?random=5" class="img-item">
+            <img src="https://picsum.photos/500/350?random=6" class="img-item">
+            <img src="https://picsum.photos/500/350?random=7" class="img-item">
+            <img src="https://picsum.photos/500/350?random=8" class="img-item tall">
+            <img src="https://picsum.photos/500/350?random=9" class="img-item">
         </div>
     </section>
 
     <!-- FEATURES -->
     <section class="features" id="features">
-        <h2>Features</h2>
+        <h2>Why This Game?</h2>
         <div class="feature-cards">
-            <div class="feature-card">⚡ Fast-paced gameplay</div>
-            <div class="feature-card">🎨 Stunning card artwork</div>
-            <div class="feature-card">📦 Premium build quality</div>
-            <div class="feature-card">🌐 Play with friends</div>
+            <div class="feature-card">
+                <h3>⚡ Dynamic Gameplay</h3>
+                <p>Fast, strategic, and endlessly replayable.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Premium Artwork</h3>
+                <p>Hand-crafted visuals that stand out.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🌍 Multiplayer Ready</h3>
+                <p>Play together locally or online.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎁 Collector Quality</h3>
+                <p>Durable cards with a luxury finish.</p>
+            </div>
         </div>
     </section>
 
-    <!-- ANIMATIONS -->
-    <section class="animations" id="animations">
-        <h2>Card Animations</h2>
-        <div class="floating-cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+    <!-- ANIMATED CARDS -->
+    <section class="animated-showcase">
+        <h2>Interactive Showcase</h2>
+        <p>Hover the cards to feel the experience.</p>
+
+        <div class="interactive-row">
+            <img src="https://picsum.photos/260/360?random=10" class="interactive-card">
+            <img src="https://picsum.photos/260/360?random=11" class="interactive-card">
+            <img src="https://picsum.photos/260/360?random=12" class="interactive-card">
+            <img src="https://picsum.photos/260/360?random=13" class="interactive-card">
         </div>
     </section>
 
     <!-- ORDER -->
     <section class="order" id="order">
         <h2>Order the Game</h2>
+        <p>The final polished version is almost ready.</p>
         <div class="coming-soon">
             <div class="x-placeholder">X</div>
             <p><strong>COMING SOON</strong></p>
-            <p>Pre-orders will open soon. Stay tuned!</p>
+            <p>Pre-orders will open shortly. Stay tuned.</p>
         </div>
     </section>
 
     <footer>
-        © 2025 Card Game. All rights reserved.
+        © 2025 Ultimate Card Game — Designed with style.
     </footer>
 
 </body>
