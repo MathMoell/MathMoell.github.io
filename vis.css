@@ -7,19 +7,30 @@ body {
   overflow-x: hidden;
 }
 
-/* HERO */
+/* HERO TEXT SECTION */
 .hero {
-  height: 85vh;
+  height: auto;
+  min-height: 60vh;
   background: linear-gradient(145deg, #8fb8ff, #dcebff);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px 20px;
   text-align: center;
   box-shadow: inset 0 0 90px rgba(0,0,0,0.15);
 }
-.hero-content h1, .hero-content p { text-align: center; }
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
 .cta-btn {
   display: inline-block;
   margin-top: 30px;
@@ -34,20 +45,6 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 .cta-btn:hover { background: #0033aa; transform: scale(1.07); }
-
-@keyframes slideUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); }}
-
-/* SINGLE HERO IMAGE */
-.hero-single-image {
-  width: 350px;
-  height: 500px;
-  border-radius: 20px;
-  object-fit: cover;
-  margin-top: 30px;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
-  transition: transform 0.4s ease;
-}
-.hero-single-image:hover { transform: scale(1.05); }
 
 /* NAVBAR */
 .navbar {
@@ -70,6 +67,24 @@ body {
   transition: 0.25s;
 }
 .navbar a:hover { color: #0055ff; transform: translateY(-3px); }
+
+/* INTERACTIVE SECTION TEXT */
+.interactive-text-section {
+  padding: 90px 20px;
+  text-align: center;
+}
+.interactive-text-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.interactive-text-section p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.85;
+}
 
 /* GALLERY */
 .gallery {
@@ -126,34 +141,6 @@ body {
   transform: translateY(-12px);
   background: #e7f0ff;
   box-shadow: 0 20px 35px rgba(0,0,0,0.2);
-}
-
-/* INTERACTIVE CARDS CENTERED */
-.animated-showcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 90px 20px;
-}
-.interactive-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-.interactive-card {
-  width: 260px;
-  height: 360px;
-  object-fit: cover;
-  border-radius: 22px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  transition: 0.4s ease;
-}
-.interactive-card:hover {
-  transform: rotate(3deg) scale(1.08);
 }
 
 /* ORDER */
